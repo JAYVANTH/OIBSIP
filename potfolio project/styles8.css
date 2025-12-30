@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,  sans-serif;
+}
+
+body{
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #020617;
+
+}
+
+.navbar a {
+    color: #e5e7eb;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #facc15;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 50px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+}
+
+.hero-text h3 {
+    color: #facc15;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #facc15;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.hero-image img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #020617;
+}
+
+.stats h2 {
+    color: #facc15;
+}
+
+.services {
+    padding: 70px 50px;
+    text-align: center;
+
+}
+
+.service_cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #020617;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+
+}
+
+.card highlight {
+    background: black
+    color: black;
+}
+ 
+.projects {
+    padding: 70px 50px;
+    background: #020617;
+}
+
+.project-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+}
+
+.contact {
+    padding: 60px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .service_cards,
+    .stats {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image img  {
+        margin-top: 30px;
+    }
+}
